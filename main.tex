@@ -1,8 +1,37 @@
-\documentclass[12pt,a4paper]{article}
+% Compilar dos veces: pdflatex investigacion_robotica.tex
+\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\IfFileExists{spanish.ldf}{\usepackage[spanish]{babel}}{}
+\usepackage{lmodern}
+\IfFileExists{spanish.ldf}{\usepackage[spanish,es-tabla]{babel}}{}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{microtype}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{graphicx,float,caption}
+\graphicspath{{imagenes/}{output/imagenes/}}
+\captionsetup{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\newcommand{\robotfoto}[4]{%
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=#2,height=8.8cm,keepaspectratio]{#1.jpg}
+  \caption{#3}\label{fig:#1}
+  {\footnotesize\raggedright #4.\par}
+  \end{figure}}
+
+\usepackage{xurl}
 \usepackage{hyperref}
+\definecolor{azul}{HTML}{173E60}
+\hypersetup{colorlinks=true,linkcolor=azul,citecolor=azul,urlcolor=azul,
+  pdftitle={Aplicaciones de los robots: asistencia, servicio y robótica social},
+  pdfsubject={Investigación documental con casos empresariales y condiciones sociales}}
+\AtBeginDocument{\renewcommand{\abstractname}{Resumen}\renewcommand{\refname}{Referencias}\renewcommand{\figurename}{Figura}\renewcommand{\tablename}{Cuadro}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \title{Aplicaciones de los Robots}
 \author{Dan Alvarado Solano \and Gabriel Molina Bulgarelli}
 \date{}
@@ -16,54 +45,88 @@ TODO
 \section{Introducción}
 Los robots se aplican a tareas y entornos diversos. Este documento estudia sus usos de asistencia, de servicio y de interacción social, atendiendo al propósito de cada sistema y a las personas que participan en su funcionamiento.
 
-\section{Robótica de Asistencia}
+\section{Alcance y fuentes de la investigación}
+Se examinan ejemplos de compañías y productos reconocibles, junto con las condiciones que justifican estudiar su uso. La clasificación se organiza según la función principal y el contexto de aplicación.
+
+\section{Desarrollo: características de los robots de servicio}
+TODO
+
+\subsection{Precisiones sobre autonomía y clasificación}
+TODO
+
+\section{Aplicaciones generales y empresas representativas}
+TODO
+
+\subsection{ABB Robotics y la manufactura}
+TODO
+
+\subsection{Spot y la inspección de instalaciones}
+TODO
+
+\section{Robótica de asistencia: autonomía cotidiana y rehabilitación}
 TODO
 
 \subsection{Jaco, de Kinova}
 TODO
 
-\section{Robótica de Servicio}
+\subsection{HAL, de CYBERDYNE}
 TODO
 
-\subsection{Moxi y la logística hospitalaria}
-TODO
-
-\section{Robótica Social}
-TODO
-
-\subsection{PARO y el cuidado de personas con demencia}
-Moyle y colaboradores estudiaron a 415 residentes con demencia en 28 centros de cuidados de larga duración de Australia. El ensayo aleatorizado por centros comparó PARO, un peluche de aspecto similar y la atención habitual. PARO favoreció la participación verbal y visual frente al peluche. Aunque algunas observaciones favorecieron a PARO frente a la atención habitual en estado de ánimo y agitación, la escala CMAI-SF no mostró diferencias entre grupos en agitación. La superioridad frente al peluche se limitó al aumento de la participación.
-
-\section{Características de los robots}
-TODO
-
-\section{Comparación y análisis}
-TODO
-
-\section{Conclusiones}
-TODO
-
-\section{Alcance del trabajo}
-TODO
-
-\section{Condiciones de uso}
-TODO
-
-\section{Evaluación de los casos}
+\section{Robótica de servicio: tareas y despliegues públicos}
 TODO
 
 \subsection{Starship y el reparto en espacios peatonales}
 Starship Technologies desarrolla robots para entregar comida y compras. Su documentación explica que utilizan rutas peatonales y que disponen de asistencia humana remota cuando la necesitan. La autonomía de navegación, por tanto, convive con una estructura de apoyo humano.
 
+\subsection{Moxi y la logística hospitalaria}
+TODO
+
 \subsection{UVD Robots durante la pandemia de COVID-19}
 La pandemia ofrece un caso histórico de despliegue público. En febrero de 2021, la Comisión Europea informó sobre la llegada de robots de desinfección de la compañía danesa UVD Robots a hospitales europeos. Los equipos utilizaban luz ultravioleta y el personal iniciaba la operación desde fuera de la habitación, sin personas presentes.
+
+\subsection{Da Vinci y el papel del equipo humano}
+TODO
+
+\section{Robótica social: comunicación, acompañamiento y evidencia}
+TODO
+
+\subsection{Pepper y la atención al público}
+TODO
 
 \subsection{ElliQ y la soledad en personas mayores}
 ElliQ, de Intuition Robotics, es un dispositivo de acompañamiento que inicia conversaciones y propone actividades. Un informe de febrero de 2026 alojado por la Oficina para el Envejecimiento del Estado de Nueva York (NYSOFA), elaborado por Intuition Robotics, describe el programa conjunto y presenta datos del período de junio de 2024 a mayo de 2025. Según ese informe, el 94\,\% de los clientes manifestó sentirse menos solo.
 
+\subsection{PARO y el cuidado de personas con demencia}
+Moyle y colaboradores estudiaron a 415 residentes con demencia en 28 centros de cuidados de larga duración de Australia. El ensayo aleatorizado por centros comparó PARO, un peluche de aspecto similar y la atención habitual. PARO favoreció la participación verbal y visual frente al peluche. Aunque algunas observaciones favorecieron a PARO frente a la atención habitual en estado de ánimo y agitación, la escala CMAI-SF no mostró diferencias entre grupos en agitación. La superioridad frente al peluche se limitó al aumento de la participación.
+
+\section{Comparación entre categorías}
+TODO
+
+\section{Condiciones sociales que hacen visibles estas aplicaciones}
+TODO
+
+\subsection{Discapacidad y acceso}
+TODO
+
+\subsection{Envejecimiento y necesidades de apoyo}
+TODO
+
+\subsection{Soledad y aislamiento social}
+TODO
+
+\subsection{Desigualdad, trabajo y emergencias}
+TODO
+
+\section{Criterios para una incorporación responsable}
+TODO
+
+\section{Conclusiones}
+TODO
+
 \begin{verbatim}
 https://aging.ny.gov/system/files/documents/2026/02/nysofa-elliq-project-update-2026.pdf
 https://doi.org/10.1109/ICORR.2005.1501143
+https://ifr.org/service-robots
 https://digital-strategy.ec.europa.eu/en/news/coronavirus-first-eu-disinfection-robots-arrive-hospitals
 https://doi.org/10.1016/S1697-7912(08)70140-7
 https://doi.org/10.1016/j.jamda.2017.03.018
