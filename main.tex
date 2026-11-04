@@ -50,19 +50,38 @@ Los robots se aplican a tareas y entornos diversos. Este documento estudia sus u
 La robótica comprende el diseño, desarrollo y aplicación de máquinas programables capaces de ejecutar tareas de manera automática o semiautomática. Los robots se distinguen de otras máquinas por su capacidad de programación, la integración de sensores y actuadores, y la posibilidad de adaptar su funcionamiento a diferentes actividades sin requerir necesariamente modificaciones en su estructura física. Estas características permiten su incorporación en una amplia variedad de campos y aplicaciones.\cite{ieeerobots}
 
 
-En términos generales, las aplicaciones de la robótica pueden clasificarse en dos grandes ámbitos: la robótica industrial y la robótica de servicio. La primera se orienta principalmente a la automatización de procesos de fabricación y producción, donde los robots realizan tareas como ensamblaje, soldadura y manipulación de materiales. Por otra parte, la robótica de servicio comprende aquellos sistemas diseñados para realizar tareas útiles en beneficio de las personas o de sus equipos, excluyendo las operaciones de fabricación industrial. A diferencia de los entornos industriales tradicionales, estas aplicaciones pueden requerir que los robots interactúen directamente con seres humanos y se adapten a entornos dinámicos y variables.
 
 
-Según la Federación Internacional de Robótica (IFR), un robot de servicio es aquel que opera de manera automática o semiautomática para realizar tareas útiles en beneficio de los seres humanos o de sus equipos, excluyendo las operaciones de fabricación. La referencia a los equipos contempla actividades como su inspección, limpieza, mantenimiento y reparación, es decir, servicios destinados a conservar su funcionamiento y utilidad.
+En términos generales, las aplicaciones de la robótica pueden clasificarse en dos grandes ámbitos: la robótica industrial y la robótica de servicio. La primera se orienta principalmente a la automatización de procesos de fabricación y producción, donde los robots realizan tareas como ensamblaje, soldadura y manipulación de materiales. Por otra parte, la robótica de servicio comprende aquellos sistemas diseñados para realizar tareas útiles en beneficio de las personas o de sus equipos, excluyendo las operaciones de fabricación industrial. A diferencia de los entornos industriales tradicionales, que por lo general están sumamente controlados con poca o nula interacción externa, las aplicaciones de la robótica de servicio pueden requerir que los robots interactúen directamente con seres humanos y se adapten a entornos dinámicos y variables.
 
 
-Dentro de la robótica de servicio existen diferentes categorías según el propósito de sus aplicaciones. En este documento se estudian tres de ellas: los robots de asistencia, diseñados para apoyar a las personas en la realización de actividades cotidianas o específicas; los robots sociales, cuya función principal es la interacción y comunicación con seres humanos; y los robots de servicio en sentido específico, orientados a ejecutar tareas útiles para las personas en distintos entornos. Se describen sus características, funciones y principales aplicaciones, con el propósito de comprender su papel en la sociedad y su contribución a las actividades humanas.
+
+
+Según la Federación Internacional de Robótica (IFR), un robot de servicio es aquel que opera de manera automática o semiautomática para realizar tareas útiles en beneficio de los seres humanos o de sus equipos, excluyendo las operaciones de fabricación. Cuando se refiere que el servicio es sobre su propio equipamiento se contemplan actividades como su inspección, limpieza, mantenimiento y reparación, es decir, servicios destinados a conservar su funcionamiento y utilidad. \cite{aracil}
+
+
+Dentro de la robótica de servicio existen diferentes categorías según el propósito de sus aplicaciones. En este documento se estudian tres de ellas: los robots de asistencia, diseñados para apoyar a las personas en la realización de actividades cotidianas o específicas; los robots sociales, cuya función principal es la interacción y comunicación con seres humanos; y los robots de servicio en sentido específico, orientados a ejecutar tareas útiles para las personas en distintos entornos. Se describen sus características, funciones y principales aplicaciones junto con algunos ejemplos, con el propósito de comprender su papel en la sociedad y su contribución a las actividades humanas.
+
+
+Es importante aclarar que, a lo largo de este documento, se utiliza el término *robótica de servicio* para referirse al ámbito general de aplicaciones robóticas orientadas al beneficio de las personas, en contraposición a la robótica industrial. Por su parte, el término *robots de servicio* se emplea en un sentido más específico para identificar aquellos sistemas que realizan tareas útiles para las personas sin que su función principal sea la asistencia o la interacción social. Esta distinción terminológica responde al enfoque adoptado para organizar el contenido del documento, ya que, en la práctica, estas categorías no son necesariamente excluyentes. Por ejemplo, un robot cuya aplicación principal sea la asistencia puede incorporar funciones de interacción social, de la misma manera que un robot social puede realizar tareas propias de un robot de servicio. Asimismo, la interacción directa con seres humanos no convierte necesariamente a un robot industrial en uno de servicio, pues su clasificación depende principalmente de su propósito y aplicación. Esta flexibilidad responde a una característica fundamental de la robótica, la capacidad de adaptar el funcionamiento de una máquina mediante su programación, siempre dentro de las posibilidades que ofrecen su diseño, estructura, sensores y actuadores. Por esta razón, las diferencias entre los distintos tipos de robots no se limitan únicamente a las actividades que realizan, sino que también se manifiestan en sus características físicas y tecnológicas.
 
 \section{Alcance y fuentes de la investigación}
 Se examinan ejemplos de compañías y productos reconocibles, junto con las condiciones que justifican estudiar su uso. En este informe, \emph{alta visibilidad} significa que existe documentación pública sobre el producto, su despliegue o su relación con un problema social. El término no equivale a una clasificación de popularidad ni demuestra eficacia.
 
 \section{Desarrollo: características de los robots de servicio}
-TODO
+Las categorías de robots pueden compartir funciones y características, sin embargo, existen diferencias generales entre la robótica industrial y la robótica de servicio que responden a las condiciones y necesidades de sus respectivas aplicaciones. Los robots industriales suelen operar en entornos controlados, ejecutando tareas específicas y previamente definidas, mientras que los robots de servicio deben desenvolverse en escenarios más variables, donde pueden encontrarse con situaciones imprevistas, interactuar con personas y manipular una mayor diversidad de objetos. Estas condiciones influyen directamente en su diseño y en los componentes tecnológicos que requieren.
+
+
+Entre las principales diferencias se encuentra su estructura física. Mientras que muchos robots industriales utilizan brazos articulados diseñados para ejecutar movimientos específicos, los robots de servicio pueden presentar configuraciones más complejas, incorporando varios brazos, mecanismos de manipulación y otros dispositivos según las tareas que deban realizar. Estos elementos, además de otorgarle funcionalidades mecánicas al robot también se integran para generar un aspecto amigable y mejorar de esta manera la interacción con los usuarios humanos. Asimismo, se suelen integrar sistemas que les permiten desplazarse por los diferentes entornos en los que operan, mediante ruedas, patas u otros mecanismos. En algunos casos, el propio dispositivo de movimiento constituye la función principal del robot, como sucede con los sistemas de transporte autónomo. \cite{aracil}
+
+
+Otra característica importante es la capacidad de percepción del entorno. La diversidad y complejidad de las operaciones que realizan los robots de servicio, así como la variabilidad de los objetos que deben manipular, requieren sistemas sensoriales capaces de recopilar e interpretar información del entorno. Estos sistemas pueden incluir cámaras, sensores de proximidad, sensores de fuerza y otros dispositivos que permiten al robot identificar obstáculos, reconocer objetos y responder a determinadas condiciones.
+
+
+Esta capacidad de percepción adquiere especial importancia cuando los robots deben desenvolverse en espacios compartidos con personas, donde las condiciones de operación pueden cambiar constantemente. Nuevamente, los robots de servicio incorporan estas características de diseño para facilitar la interacción con los usuarios y generar una apariencia familiar. Un ejemplo es Pepper, un robot utilizado en aplicaciones de robótica social que incorpora una cámara, un micrófono y altavoces en la parte superior de su estructura, lo que le permite percibir información del entorno, recibir instrucciones y comunicarse con las personas. \cite{pepperdoc} En contraste, un robot industrial puede incorporar sensores y actuadores similares, pero su distribución y disposición suelen responder principalmente a criterios de eficiencia y optimización de sus tareas, sin que necesariamente deban considerar aspectos relacionados con la interacción directa con usuarios humanos.
+
+
+En conjunto, estas características permiten comprender por qué la robótica de servicio requiere una gran variedad de diseños y soluciones tecnológicas. A continuación, se describen tres categorías representativas de este ámbito: los robots de asistencia, los robots de servicio en sentido específico y los robots sociales.
 
 \subsection{Precisiones sobre autonomía y clasificación}
 TODO
@@ -338,14 +357,14 @@ Intuition Robotics, ``Announcing the commercial availability of ElliQ,'' 15 de m
 
 \bibitem{starshipescala}
 Starship Technologies, ``Autonomous delivery moves into the mainstream as Starship Technologies passes 10 million deliveries,'' 28 de abril de 2026. Comunicado empresarial.
-[En línea]. Disponible en: \url{https://www.starship.xyz/press/autonomous-delivery-moves-into-the-mainstream-as-starship-technologies-passes-10-million-deliveries/}.
+[En línea]. Disponible en: \url{https://www.starship.xyz/press/autonomous-delivery-moves-into-the-mainstream-as-starship-technologies-passes-10-million-deliveries/}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{jacodesarrollo}
 A. Campeau-Lecours, V. Maheu, S. Lepage, H. Lamontagne, S. Latour, L. Paquet y N. Hardie, ``JACO assistive robotic device: Empowering people with disabilities through innovative algorithms,'' en \emph{RESNA Annual Conference}, 2016. [En línea]. Disponible en: \url{https://www.resna.org/sites/default/files/conference/2016/other/campeau_lecours.html}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{intuitive}
 Intuitive, ``Da Vinci surgery,'' Información para pacientes.
-[En línea]. Disponible en: \url{https://www.intuitive.com/en-us/patients/da-vinci-robotic-surgery}.
+[En línea]. Disponible en: \url{https://www.intuitive.com/en-us/patients/da-vinci-robotic-surgery}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{paroensayo}
 W. Moyle \emph{et al.}, ``Use of a robotic seal as a therapeutic tool to improve dementia symptoms: A cluster-randomized controlled trial,'' \emph{Journal of the American Medical Directors Association}, vol. 18, n.º 9, pp. 766--773, 2017, doi: \href{https://doi.org/10.1016/j.jamda.2017.03.018}{10.1016/j.jamda.2017.03.018}.
@@ -359,22 +378,25 @@ Comisión Europea, ``European Commission procurement triggers wider deployment o
 
 \bibitem{hal}
 CYBERDYNE, ``Medical HAL: Lower limb type,''
-[En línea]. Disponible en: \url{https://www.cyberdyne.jp/en/products/hal-lowerlimb-medical}.
+[En línea]. Disponible en: \url{https://www.cyberdyne.jp/en/products/hal-lowerlimb-medical}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{abb}
 ABB, ``Robotics applications,''
 [En línea]. Disponible en: \url{https://www.abb.com/global/en/areas/robotics/applications}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{davincihist}
-Intuitive, ``Company history,'' [En línea]. Disponible en: \url{https://www.intuitive.com/en-us/about-us/company/history}.
+Intuitive, ``Company history,'' [En línea]. Disponible en: \url{https://www.intuitive.com/en-us/about-us/company/history}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{omsdiscapacidad}
 Organización Mundial de la Salud, ``Disability,'' 7 de marzo de 2023.
 [En línea]. Disponible en: \url{https://www.who.int/news-room/fact-sheets/detail/disability-and-health}.
 
+\bibitem{pepperdoc}
+Aldebaran Robotics, ``Technical overview: Pepper,'' \emph{Aldebaran documentation}, ver. 2.5.11.14a. [En línea]. Disponible en: \url{https://doc.aldebaran.com/2-5/family/pepper_technical/index_pep.html}. Consultado: 4 de noviembre de 2026.
+
 \bibitem{starshipfaq}
 Starship Technologies, ``FAQ,''
-[En línea]. Disponible en: \url{https://www.starship.xyz/faq/}.
+[En línea]. Disponible en: \url{https://www.starship.xyz/faq/}. Consultado: 4 de noviembre de 2026.
 
 \bibitem{halhist}
 Organización Mundial de la Propiedad Intelectual, ``Rise of the cybernoids: Japanese inventor creates wearable robots,'' [En línea]. Disponible en: \url{https://www.wipo.int/en/web/ip-advantage/w/stories/rise-of-the-cybernoids-japanese-inventor-creates-wearable-robots}.
