@@ -32,7 +32,9 @@
 \setlength{\emergencystretch}{2em}
 \renewcommand{\arraystretch}{1.18}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
-\title{Aplicaciones de los Robots}
+\title{\textbf{Aplicaciones de los robots}\\[0.4em]
+  \large Robótica de asistencia, de servicio y social:\\
+  empresas, evidencia y condiciones sociales de alta visibilidad}
 \author{Dan Alvarado Solano \and Gabriel Molina Bulgarelli}
 \date{Universidad de Costa Rica\\CI-0160 Robótica\\[0.5em]5 de noviembre de 2026}
 
@@ -121,12 +123,16 @@ ABB documenta aplicaciones industriales de soldadura, pintura, ensamblaje y mane
 
 \robotfoto{abb}{10.5cm}{Brazos industriales de ABB en una celda de soldadura de carrocerías. La vista diagonal muestra la coordinación espacial entre herramienta y pieza.}{Fuente: ABB \cite{imgabb}}
 
+\clearpage
+
 \subsection{Spot y la inspección de instalaciones}
 Spot, de Boston Dynamics, desplaza sensores por instalaciones industriales. Su documentación describe inspección térmica de bombas, motores y equipos eléctricos. El valor de la tarea depende de que los datos permitan localizar una anomalía y actuar sobre ella; recorrer una ruta no demuestra por sí solo una mejora del mantenimiento.\cite{spot}
 
 \textbf{Cómo se desarrolló.} Boston Dynamics sitúa en 2015 a Spot Classic, su primer cuadrúpedo completamente eléctrico, diseñado para interiores y exteriores. Esa plataforma precedió al Spot comercial. La venta general se anunció en junio de 2020, después de un programa de usuarios tempranos. El desarrollo combinó locomoción con patas y una plataforma para integrar cargas, sensores y aplicaciones mediante interfaces de software. Esta modularidad explica que el mismo cuerpo móvil pueda adaptarse a distintas tareas de inspección.\cite{spothist,spotlaunch}
 
 \robotfoto{spot}{14.2cm}{Spot con sensores durante una inspección entre tuberías y equipos. La toma oblicua permite apreciar el cuerpo, las patas y la instrumentación.}{Fuente: Boston Dynamics \cite{imgspot}}
+
+\clearpage
 
 \section{Robótica de asistencia: autonomía cotidiana y rehabilitación}
 Los robots de asistencia son sistemas robóticos diseñados para apoyar a las personas en la realización de actividades cotidianas o específicas, con el propósito de facilitar su desempeño, aumentar su autonomía y mejorar su calidad de vida. Sus aplicaciones se encuentran relacionadas con el acompañamiento y apoyo a personas que presentan dificultades para realizar determinadas tareas, aunque también pueden utilizarse para complementar las capacidades humanas en diferentes contextos. Dependiendo de su diseño y finalidad, pueden proporcionar asistencia física, cognitiva o funcional, adaptándose a las características de las actividades que deben apoyar.
@@ -136,22 +142,24 @@ Jaco es un brazo robótico que se instala en una silla de ruedas motorizada para
 
 \textbf{Cómo se desarrolló.} Un trabajo técnico de investigadores de Kinova y de la Universidad Laval describe la evolución del brazo y de su control. La estructura combina seis segmentos de fibra de carbono con actuadores rotativos. El desarrollo se centró también en facilitar acciones: posiciones de alcance y plegado, filtros para suavizar el movimiento y coordinación de traslación y orientación al beber. Esas decisiones reducen la cantidad de movimientos que el usuario debe combinar mediante la interfaz de su silla.\cite{jacodesarrollo}
 
+\robotfoto{jaco}{14.2cm}{Jaco montado en una silla de ruedas, utilizado para alcanzar un objeto sobre el mostrador de una cafetería. La escena muestra el espacio de alcance en una actividad cotidiana.}{Fuente: Kinova \cite{imgjaco}}
 
 
 Para evaluar su utilidad, hay que observar qué actividad puede completar la persona, cuánto esfuerzo requiere y cuándo sigue necesitando ayuda. La prueba del equipo debe realizarse con la persona y en su entorno. La descripción comercial acredita las funciones previstas, pero no demuestra que todos los usuarios obtengan el mismo resultado.
 
-\robotfoto{jaco}{14.2cm}{Jaco montado en una silla de ruedas, utilizado para alcanzar un objeto sobre el mostrador de una cafetería. La escena muestra el espacio de alcance en una actividad cotidiana.}{Fuente: Kinova \cite{imgjaco}}
+\clearpage
 
 \subsection{HAL, de CYBERDYNE}
 HAL es una familia de dispositivos de asistencia que se llevan sobre el cuerpo. En la versión médica para miembros inferiores, sensores sobre la piel detectan señales bioeléctricas relacionadas con el intento de movimiento y el sistema ayuda a mover las articulaciones. CYBERDYNE lo presenta para tratamiento de alteraciones de la marcha y advierte que las indicaciones autorizadas varían según el país y la autoridad reguladora.\cite{hal}
 
 \textbf{Cómo se desarrolló.} Yoshiyuki Sankai inició esta línea de investigación en la Universidad de Tsukuba, combinando robótica, señales del cuerpo y control del movimiento. La reseña de la Organización Mundial de la Propiedad Intelectual documenta la creación de CYBERDYNE en 2004 para desarrollar y comercializar los resultados. La transferencia requirió prototipos, propiedad intelectual y fabricación, además del mecanismo de asistencia. El propósito técnico fue acoplar la ayuda del dispositivo al intento de movimiento de la persona, en lugar de imponer únicamente una secuencia fija.\cite{halhist}
 
+\robotfoto{hal}{14.2cm}{Uso de HAL en una cinta de marcha con supervisión profesional. El ángulo posterior permite ver el exoesqueleto y su relación con las piernas.}{Crédito indicado: Prof. Sankai, University of Tsukuba / CYBERDYNE Inc. \cite{imghal}}
 
 
 En este caso conviene separar dos preguntas: si el dispositivo ayuda a ejecutar el movimiento durante una sesión y si el tratamiento produce una mejoría funcional que continúa sin el equipo. Son resultados distintos. La información del fabricante permite explicar el mecanismo, pero no basta para afirmar recuperación permanente ni para recomendarlo a cualquier persona con dificultad para caminar.
 
-\robotfoto{hal}{14.2cm}{Uso de HAL en una cinta de marcha con supervisión profesional. El ángulo posterior permite ver el exoesqueleto y su relación con las piernas.}{Crédito indicado: Prof. Sankai, University of Tsukuba / CYBERDYNE Inc. \cite{imghal}}
+\clearpage
 
 \section{Robótica de servicio: tareas y despliegues públicos}
 Los robots de servicio, en su sentido específico, son sistemas robóticos orientados a ejecutar tareas útiles en beneficio de las personas, sin que su función principal sea proporcionar asistencia directa o establecer interacciones sociales. Se caracterizan por automatizar actividades que, de otro modo, requerirían la intervención humana, contribuyendo a mejorar la eficiencia, reducir el esfuerzo físico y facilitar la ejecución de determinadas labores. Su funcionamiento puede requerir distintos niveles de autonomía, así como la integración de sensores y actuadores que les permitan desenvolverse en entornos variables y responder a las condiciones de su entorno.
@@ -161,46 +169,50 @@ Starship Technologies desarrolla robots para entregar comida y compras. Su docum
 
 \textbf{Cómo se desarrolló.} La cronología de la compañía sitúa su fundación por Ahti Heinla y Janus Friis en julio de 2014 y el primer prototipo en agosto de ese año. Después vinieron pruebas en ciudades europeas, un piloto de reparto de comida en Londres en 2017 y el servicio comercial de compras en Milton Keynes en 2018. El paso de prototipo a servicio requirió probar rutas y encuentros con peatones, además de organizar la entrega y el apoyo remoto ante excepciones.\cite{starshiphist,starshipfaq}
 
+\robotfoto{starship}{14.2cm}{Robot de Starship en una acera de Milton Keynes. La cámara baja sitúa el vehículo a la altura del recorrido y muestra el espacio compartido con peatones.}{Fuente: Starship Technologies \cite{imgstarship}}
 
 
 En un comunicado del 28 de abril de 2026, la empresa anunció diez millones de entregas y una flota superior a tres mil robots en ocho países. Son cifras declaradas por el proveedor, útiles para documentar la escala anunciada del servicio. No constituyen una auditoría independiente de seguridad o rentabilidad.\cite{starshipescala} La evaluación debe incluir a quienes comparten la acera: se propone observar bloqueos, incidentes, accesibilidad y rapidez de respuesta ante un equipo detenido.
-
-\robotfoto{starship}{14.2cm}{Robot de Starship en una acera de Milton Keynes. La cámara baja sitúa el vehículo a la altura del recorrido y muestra el espacio compartido con peatones.}{Fuente: Starship Technologies \cite{imgstarship}}
+\clearpage
 
 \subsection{Moxi y la logística hospitalaria}
 Moxi, de Diligent Robotics, realiza entregas dentro del hospital. La documentación de la empresa describe compartimentos con cierre para muestras, medicamentos y suministros, así como el uso de ascensores y puertas. También indica que el robot puede recibir solicitudes de entrega del personal y volver a su estación de carga.\cite{moxi}
 
 \textbf{Cómo se desarrolló.} Andrea Thomaz y Vivian Chu fundaron Diligent Robotics en 2017. La empresa identifica como bases de su trabajo la manipulación móvil, la interacción con personas y el aprendizaje guiado por humanos. Moxi combina una base que se desplaza con un brazo para manipular objetos; su uso hospitalario exige integrar solicitudes, puertas, ascensores y puntos de entrega. Así, el desarrollo incluye tanto el robot como su conexión con las rutinas del centro.\cite{moxihist,moxi}
 
+\robotfoto{moxi}{12.8cm}{Moxi dentro de un ascensor. El encuadre frontal permite identificar el equipo y una parte de la infraestructura que utiliza para circular por el hospital.}{Fuente: Providence \cite{imgmoxi}; fotógrafo no identificado}
 
 
 El objetivo operativo es reducir desplazamientos que consumen tiempo del personal. Sin embargo, contar entregas no permite concluir que mejora la atención clínica. Una evaluación local debería medir demoras, errores, entregas completadas y tiempo neto disponible, incluyendo el trabajo que exige atender fallos del robot. Estas son propuestas de medición del informe, no resultados demostrados por la página comercial.
 
 El informe mundial de enfermería de 2025, difundido por la OMS, estimó un déficit de 5,8 millones de profesionales en 2023 y describió fuertes desigualdades entre países.\cite{omsenfermeria} Ese déficit ayuda a entender el interés por automatizar tareas de transporte, pero no prueba que un robot resuelva la falta de personal. La propia OMS señala la necesidad de invertir en educación, empleo y retención.
 
-\robotfoto{moxi}{12.8cm}{Moxi dentro de un ascensor. El encuadre frontal permite identificar el equipo y una parte de la infraestructura que utiliza para circular por el hospital.}{Fuente: Providence \cite{imgmoxi}; fotógrafo no identificado}
+
+\clearpage
 
 \subsection{UVD Robots durante la pandemia de COVID-19}
 La pandemia ofrece un caso histórico de despliegue público. En febrero de 2021, la Comisión Europea informó sobre la llegada de robots de desinfección de la compañía danesa UVD Robots a hospitales europeos. Los equipos utilizaban luz ultravioleta y el personal iniciaba la operación desde fuera de la habitación, sin personas presentes.\cite{uvdinicio}
 
 \textbf{Cómo se desarrolló.} El desarrollo antecede a la pandemia: la Comisión Europea documenta un proyecto de 2014 a 2017 impulsado mediante contratación precomercial de las regiones danesas. Blue Ocean Robotics trabajó en una plataforma móvil de desinfección; UVD Robots se constituyó en 2016 dentro de esa colaboración entre sector público y empresa. La solución combinó navegación autónoma y lámparas UV-C. El caso muestra cómo una necesidad hospitalaria puede orientar prototipos y pruebas antes de una compra a mayor escala.\cite{uvdhist,uvdempresa}
 
+\robotfoto{uvd}{14.2cm}{Equipo de UVD Robots en un espacio de hostelería. La vista oblicua muestra la base móvil y las lámparas; ilustra el sistema, no las entregas a hospitales de la Unión Europea.}{Fuente: Blue Ocean Robotics, distribuida por Via Ritzau \cite{imguvd}}
 
 
 En diciembre de 2021, la Comisión comunicó que había completado la entrega de 305 robots de desinfección a hospitales de los 27 Estados miembros.\cite{uvdfinal} Esta documentación demuestra una respuesta institucional y un despliegue durante una emergencia sanitaria. Para afirmar cuánto redujeron las infecciones se necesitarían resultados clínicos comparativos; la cantidad de equipos entregados no responde esa pregunta.
 
-\robotfoto{uvd}{14.2cm}{Equipo de UVD Robots en un espacio de hostelería. La vista oblicua muestra la base móvil y las lámparas; ilustra el sistema, no las entregas a hospitales de la Unión Europea.}{Fuente: Blue Ocean Robotics, distribuida por Via Ritzau \cite{imguvd}}
+\clearpage
 
 \subsection{Da Vinci y el papel del equipo humano}
 Intuitive presenta da Vinci como una herramienta para realizar cirugía mínimamente invasiva. La Administración de Alimentos y Medicamentos de Estados Unidos (FDA) explica que estos sistemas permiten al cirujano controlar instrumentos mediante una consola y requieren control humano directo. También señala que la conveniencia del procedimiento depende del caso y de la capacitación del profesional.\cite{intuitive,fda}
 
 \textbf{Cómo se desarrolló.} SRI sitúa sus investigaciones sobre cirugía por telepresencia en la década de 1980, vinculadas inicialmente con necesidades del Ejército de Estados Unidos. Intuitive se fundó en 1995 y obtuvo una licencia de esa tecnología. La compañía registra su primera consola en 1996 y el lanzamiento de da Vinci en 2000. El desarrollo trasladó la idea de operar mediante una consola a un sistema clínico con visión e instrumentos controlados por el cirujano; no convirtió la operación en una decisión autónoma del robot.\cite{sri,davincihist}
 
+\robotfoto{davinci}{14.2cm}{Da Vinci Xi durante una demostración en el hospital de Vesoul, Francia, en 2023. La toma lateral permite ver los brazos y el puesto de trabajo; no muestra una operación en curso.}{Fotografía: A.BourgeoisP \cite{imgdavinci}; licencia CC BY-SA 4.0}
 
 
 El equipo amplía las posibilidades de manipulación del cirujano, mientras las decisiones clínicas y el procedimiento siguen bajo responsabilidad humana. Su presencia en un hospital tampoco demuestra superioridad frente a todas las alternativas: esa comparación exige evidencia sobre el procedimiento y los pacientes correspondientes.
 
-\robotfoto{davinci}{14.2cm}{Da Vinci Xi durante una demostración en el hospital de Vesoul, Francia, en 2023. La toma lateral permite ver los brazos y el puesto de trabajo; no muestra una operación en curso.}{Fotografía: A.BourgeoisP \cite{imgdavinci}; licencia CC BY-SA 4.0}
+\clearpage
 
 \section{Robótica social: comunicación, acompañamiento y evidencia}
 Los robots sociales son sistemas robóticos cuya finalidad principal es establecer interacciones con los seres humanos. A diferencia de otros tipos de robots, cuyo propósito se centra principalmente en la ejecución de tareas físicas o funcionales, estos sistemas buscan generar una interacción comprensible y natural mediante el uso de mecanismos de comunicación verbal y no verbal. Para ello, pueden incorporar tecnologías de reconocimiento de voz, procesamiento del lenguaje, detección de expresiones y reconocimiento de gestos, que les permiten interpretar determinados estímulos y generar respuestas acordes con la interacción.
@@ -210,35 +222,38 @@ Pepper, desarrollado por SoftBank y Aldebaran, utiliza conversación, movimiento
 
 \textbf{Cómo se desarrolló.} SoftBank y Aldebaran presentaron Pepper en junio de 2014, después de que SoftBank invirtiera en Aldebaran en 2012. La plataforma reunió motores para gestos, cámaras, micrófonos y una pantalla, junto con herramientas de desarrollo basadas en NAOqi. El diseño permitió crear aplicaciones que combinan habla, movimientos y contenido visual. La presentación comercial describía inferencias a partir del rostro y la voz; esas funciones deben entenderse como procesamiento de señales, sin atribuir al robot sentimientos o comprensión humana.\cite{pepperorigen}
 
+\robotfoto{pepper}{14.2cm}{Pepper visto de tres cuartos durante una exhibición. El encuadre permite observar la cabeza, las manos y la pantalla, elementos de su interfaz social.}{Fotografía: Kukarobot \cite{imgpepper}; licencia CC BY-SA 4.0}
 
 
 La apariencia y la capacidad de responder pueden atraer la atención de visitantes, pero el resultado relevante es si la persona consigue la información o la ayuda que busca. Para una recepción se propone medir consultas resueltas, errores y derivaciones al personal. Las expresiones o respuestas programadas del robot no bastan para atribuirle comprensión emocional humana.
 
-\robotfoto{pepper}{14.2cm}{Pepper visto de tres cuartos durante una exhibición. El encuadre permite observar la cabeza, las manos y la pantalla, elementos de su interfaz social.}{Fotografía: Kukarobot \cite{imgpepper}; licencia CC BY-SA 4.0}
+\clearpage
 
 \subsection{ElliQ y la soledad en personas mayores}
 ElliQ, de Intuition Robotics, es un dispositivo de acompañamiento que inicia conversaciones y propone actividades. Un informe de febrero de 2026 alojado por la Oficina para el Envejecimiento del Estado de Nueva York (NYSOFA), elaborado por Intuition Robotics, describe el programa conjunto y presenta datos del período de junio de 2024 a mayo de 2025. Según ese informe, el 94\,\% de los clientes manifestó sentirse menos solo.\cite{elliq}
 
 \textbf{Cómo se desarrolló.} Intuition Robotics anunció la disponibilidad comercial en marzo de 2022, tras más de cinco años de investigación, desarrollo y pruebas con usuarios, según su comunicado. El diseño realizado con fuseproject separó una unidad que expresa orientación mediante movimiento y luz de una pantalla para contenido visual. Su forma abstracta y la iniciativa para conversar son decisiones de interacción: el proyecto buscó una presencia doméstica que propusiera actividades y acompañara rutinas. Las pruebas y revisiones del producto no equivalen, por sí mismas, a una validación clínica.\cite{elliqlanzamiento,elliqdiseno}
 
+\robotfoto{elliq}{14.2cm}{ElliQ sobre una mesa, junto a personas en un entorno doméstico. La escena permite apreciar su tamaño y la relación entre la unidad móvil y la pantalla.}{Fuente: Intuition Robotics \cite{imgelliq}}
 
 
 El porcentaje corresponde a una valoración declarada por los clientes; no significa que la soledad haya disminuido un 94\,\%. El documento tampoco presenta ese dato como resultado de un ensayo aleatorizado con grupo de control. Por ello, este informe lo interpreta como información del programa sobre la experiencia de uso, sin atribuirle una demostración causal de eficacia clínica. La participación del proveedor en la elaboración exige mantener explícito el origen de los resultados.
 
-\robotfoto{elliq}{14.2cm}{ElliQ sobre una mesa, junto a personas en un entorno doméstico. La escena permite apreciar su tamaño y la relación entre la unidad móvil y la pantalla.}{Fuente: Intuition Robotics \cite{imgelliq}}
+\clearpage
 
 \subsection{PARO y el cuidado de personas con demencia}
 PARO es un robot con forma de cría de foca desarrollado en el instituto japonés AIST y comercializado por Intelligent System. Su interacción permite incorporarlo a actividades de cuidado y acompañamiento.\cite{aist} Su uso en cuidados se ha estudiado mediante ensayos comparativos publicados.
 
 \textbf{Cómo se desarrolló.} AIST documenta que Takanori Shibata comenzó esta investigación en 1993. En 2004 presentó un prototipo de octava generación, desarrollado en colaboración con Microjennics, y una licencia comercial para Intelligent System. Las iteraciones integraron sensores de contacto, luz, sonido, temperatura y postura para producir respuestas durante la interacción. La elección de una cría de foca dio lugar a una forma que se puede sostener y acariciar; el desarrollo técnico se centró en esas respuestas y en la adaptación al contacto.\cite{aist}
 
+\robotfoto{paro}{14.2cm}{Takanori Shibata con PARO, en una fotografía de 2018. El retrato vincula el robot con su desarrollador y permite apreciar su escala y superficie.}{Fotografía: Geraldshields11 \cite{imgparo}; licencia CC BY-SA 4.0}
 
 
 Moyle y colaboradores estudiaron a 415 residentes con demencia en 28 centros de cuidados de larga duración de Australia. El ensayo aleatorizado por centros comparó PARO, un peluche de aspecto similar y la atención habitual. PARO favoreció la participación verbal y visual frente al peluche. Aunque algunas observaciones favorecieron a PARO frente a la atención habitual en estado de ánimo y agitación, la escala CMAI-SF no mostró diferencias entre grupos en agitación. La superioridad frente al peluche se limitó al aumento de la participación.\cite{paroensayo}
 
 Estos resultados respaldan una aplicación delimitada y muestran por qué importa elegir el comparador. Una mayor participación durante la actividad no demuestra mejoría general de la demencia. Tampoco permite trasladar automáticamente el resultado a otros robots o poblaciones.
 
-\robotfoto{paro}{14.2cm}{Takanori Shibata con PARO, en una fotografía de 2018. El retrato vincula el robot con su desarrollador y permite apreciar su escala y superficie.}{Fotografía: Geraldshields11 \cite{imgparo}; licencia CC BY-SA 4.0}
+\clearpage
 
 \section{Comparación entre categorías}
 Aunque los robots de asistencia, de servicio y sociales comparten características propias de la robótica de servicio, sus diferencias se encuentran principalmente en el propósito para el que son diseñados y en la manera en que contribuyen a las actividades humanas. Mientras que los robots de asistencia buscan apoyar directamente las capacidades de las personas, los robots de servicio se orientan principalmente a ejecutar tareas específicas y los robots sociales priorizan la interacción con humanos. Estas diferencias también se reflejan en sus características físicas, los sensores, los mecanismos de control y el grado de autonomía que requieren para cumplir sus funciones.
