@@ -83,7 +83,6 @@ También debe distinguirse la robótica médica. Según la explicación de la IF
 \section{Aplicaciones generales y empresas representativas}
 La tarea determina qué forma y qué control necesita el equipo. Un manipulador industrial trabaja sobre piezas; un robot móvil transporta una carga; un sistema de asistencia debe adaptarse a la persona que lo utiliza. El cuadro~\ref{tab:casos} reúne ejemplos que se desarrollan en las secciones siguientes.
 
-
 \begingroup
 \small
 \setlength{\tabcolsep}{4pt}
@@ -112,7 +111,6 @@ Acompañamiento & Intuition Robotics: ElliQ & Conversación proactiva y activida
 Asistencia social & Intelligent System: PARO, desarrollado en AIST & Interacción con un robot con forma de cría de foca en actividades de cuidado.\cite{aist,paroensayo} & Participación y respuesta de cada persona, con comparación frente a otras actividades. \\
 \end{longtable}
 \endgroup
-
 
 \clearpage
 
@@ -245,15 +243,11 @@ Estos resultados respaldan una aplicación delimitada y muestran por qué import
 \section{Comparación entre categorías}
 Aunque los robots de asistencia, de servicio y sociales comparten características propias de la robótica de servicio, sus diferencias se encuentran principalmente en el propósito para el que son diseñados y en la manera en que contribuyen a las actividades humanas. Mientras que los robots de asistencia buscan apoyar directamente las capacidades de las personas, los robots de servicio se orientan principalmente a ejecutar tareas específicas y los robots sociales priorizan la interacción con humanos. Estas diferencias también se reflejan en sus características físicas, los sensores, los mecanismos de control y el grado de autonomía que requieren para cumplir sus funciones.
 
-
 En los robots de asistencia, la tecnología se integra como un medio para facilitar actividades que pueden resultar difíciles de realizar de manera independiente. Por ejemplo, HAL utiliza mecanismos de asistencia robótica para apoyar el movimiento humano, mientras que JACO, desarrollado por Kinova, permite manipular objetos mediante un brazo robótico controlado por el usuario.En ambos casos, se representan aproximaciones diferentes de lo que puede ser la asistencia, con un sistema está orientado a complementar las capacidades físicas de una persona, por lo que su funcionamiento debe adaptarse a sus necesidades y habilidades particulares. \cite{jaco, hal} 
-
 
 Por otra parte, los robots de servicio se caracterizan por ejecutar actividades concretas en beneficio de las personas o de las instituciones. Sus aplicaciones presentan una mayor diversidad en cuanto a los entornos de trabajo y las tareas que realizan. El sistema da Vinci permite asistir a profesionales durante procedimientos quirúrgicos, UVD se utiliza para la desinfección de espacios mediante radiación ultravioleta, Moxi facilita actividades logísticas dentro de centros hospitalarios, y Starship realiza entregas autónomas de productos. Estos ejemplos muestran que los robots de servicio pueden desempeñar funciones muy diferentes, desde tareas especializadas en entornos médicos hasta actividades de transporte y logística.
 
-
 En el caso de los robots sociales, su principal característica es la capacidad de establecer interacciones con las personas mediante diferentes mecanismos de comunicación. PARO, por ejemplo, utiliza una apariencia y un comportamiento semejantes a los de un animal para generar respuestas afectivas, ElliQ está diseñado para proporcionar acompañamiento e interacción a personas mayores, mientras que Pepper incorpora capacidades de reconocimiento e interacción que le permiten participar en diferentes actividades sociales y de atención al público.\cite{aist, elliq, pepper}  A diferencia de los robots cuya función principal consiste en ejecutar una tarea física, estos sistemas utilizan la interacción como parte fundamental de su propósito.
-
 
 \begin{table}[ht]
 \centering
@@ -272,61 +266,50 @@ En el caso de los robots sociales, su principal característica es la capacidad 
 \textbf{Robots de servicio} &
 \textbf{Robots sociales} \\ \hline
 
-
 Propósito principal &
 Apoyar las capacidades físicas o funcionales de las personas. &
 Ejecutar tareas específicas en beneficio de las personas o sus equipos. &
 Facilitar la interacción y comunicación con los seres humanos. \\ \hline
-
 
 Interacción humana &
 Directa y orientada a complementar las capacidades del usuario. &
 Variable, puede ser directa, indirecta o limitada a la supervisión. &
 Directa, mediante mecanismos de comunicación verbal y no verbal. \\ \hline
 
-
 Características tecnológicas &
 Sensores de movimiento, mecanismos de asistencia física, actuadores y sistemas de control adaptados al usuario. &
 Sensores ambientales, sistemas de navegación, mecanismos de manipulación y automatización de tareas. &
 Reconocimiento de voz, procesamiento del lenguaje, detección de gestos y mecanismos de interacción. \\ \hline
-
 
 Aplicaciones &
 Movilidad, rehabilitación, manipulación de objetos y apoyo a actividades cotidianas. &
 Cirugía, desinfección, logística, transporte e inspección. &
 Acompañamiento, entretenimiento, educación y atención al público. \\ \hline
 
-
 Autonomía &
 Variable. Pueden requerir control directo del usuario o funcionar mediante asistencia automatizada. &
 Variable. Algunos ejecutan tareas autónomamente, mientras otros requieren supervisión o control profesional. &
 Variable. Pueden responder automáticamente a estímulos o depender de instrucciones e interacciones humanas. \\ \hline
-
 
 Entorno &
 Hogares, centros de rehabilitación y centros médico &
 Espacios comerciales, instalaciones industriales y espacios públicos. &
 Hogares, centros educativos, hospitales y espacios de atención al público. \\ \hline
 
-
 \end{tabularx}
 \end{table}
 
-
 Es importante señalar que la clasificación presentada no implica que los robots pertenezcan necesariamente a una única categoría o que sus aplicaciones se encuentren limitadas a un propósito específico. Existen sistemas cuyo diseño y características están estrechamente vinculados con una función determinada, como HAL, su función principal es el movimiento humano con un diseño estrictamente enfocado en la funcionalidad, lo que limita la creación de otras aplicaciones en su sistema.\cite{hal}  Sin embargo, también existen plataformas robóticas más versátiles que, debido a sus capacidades de interacción, programación y adaptación, pueden utilizarse en aplicaciones correspondientes a diferentes categorías. Un ejemplo de ello es Pepper, cuya finalidad principal se relaciona con la interacción social, pero cuyas capacidades de comunicación y reconocimiento del entorno pueden aprovecharse para desarrollar aplicaciones de asistencia o para ejecutar determinadas tareas de servicio.\cite{pepper}  Por lo tanto, es necesario distinguir entre la categoría que representa el propósito principal de diseño de un robot y las diferentes aplicaciones que pueden desarrollarse a partir de sus capacidades. Esta distinción permite comprender que las categorías estudiadas funcionan como una herramienta para organizar y analizar la robótica de servicio, pero no constituyen divisiones estrictas ni excluyentes entre sí. Un robot puede tener un diseño particular para optimizar el desempeño de su función específica o puede ser más versátil permitiendo el desarrollo de distintos tipos de aplicaciones en una sola máquina.
 
-
 A partir de lo anterior, se observa que las tres categorías tampoco representan divisiones tecnológicas completamente independientes. Un robot de asistencia puede incorporar mecanismos de interacción social para comunicarse con su usuario, mientras que un robot de servicio puede requerir interfaces de comunicación para recibir instrucciones o informar sobre sus actividades. El incluir estos elementos de manera física o como parte fundamental de una aplicación no determina directamente su tipo. Por lo tanto, la clasificación depende principalmente de la finalidad que predomina en el diseño y la aplicación del sistema, y no exclusivamente de las tecnologías que incorpora.
-
 
 \clearpage
 
 \section{Condiciones sociales que hacen visibles estas aplicaciones}
-TODO
+
 
 \subsection{Discapacidad y acceso}
 La OMS estima que 1\,300 millones de personas, aproximadamente el 16\,\% de la población mundial, experimentan una discapacidad significativa. Su explicación incluye la interacción entre condiciones de salud y barreras del entorno. Por tanto, la asistencia robótica debe examinarse junto con la accesibilidad de la vivienda, el transporte y los servicios. Un brazo robótico puede facilitar una tarea, mientras otras barreras siguen limitando la participación.\cite{omsdiscapacidad}
-
 
 La ficha de la OMS sobre tecnología de asistencia señala que más de 2\,500 millones de personas necesitan al menos un producto de apoyo y que el acceso es insuficiente en muchos países. Esta cifra comprende productos muy diversos, como gafas, audífonos y sillas de ruedas; no corresponde a usuarios potenciales de robots.\cite{omstech} Como criterio de evaluación, se propone comparar el beneficio del robot con otras ayudas disponibles e incluir adquisición, adaptación, mantenimiento y formación en el costo de uso.
 
@@ -336,18 +319,15 @@ La OMS proyecta que en 2030 una de cada seis personas tendrá 60 años o más. T
 \subsection{Soledad y aislamiento social}
 La Comisión de la OMS sobre Conexión Social informó en 2025 que la soledad afecta aproximadamente a una de cada seis personas. La OMS distingue la soledad, una experiencia subjetiva de distancia entre los vínculos deseados y los existentes, del aislamiento social, referido a la falta objetiva de conexiones suficientes. El problema afecta a distintas edades, incluidos jóvenes.\cite{omssoledad}
 
-
 ElliQ y PARO muestran dos respuestas tecnológicas diferentes, pero sus resultados no pueden equipararse. El primero aporta datos de un programa de acompañamiento; el segundo dispone del ensayo descrito con personas con demencia. Se propone evaluar estos dispositivos junto con el contacto humano y las actividades comunitarias, para comprobar si amplían las oportunidades de relación y respetan las preferencias del usuario.
 
 \subsection{Desigualdad, trabajo y emergencias}
 La discapacidad, el acceso insuficiente a productos de apoyo y la distribución desigual del personal sanitario conectan la robótica con decisiones sobre recursos públicos.\cite{omsdiscapacidad,omstech,omsenfermeria} Como interpretación de las fuentes, un despliegue puede tener mucha visibilidad y seguir siendo poco accesible para quienes necesitan apoyo. Por eso, las decisiones de incorporación deberían considerar cobertura, mantenimiento local y alternativas disponibles.
 
-
 La COVID-19 muestra otra condición: una emergencia puede acelerar la compra y el uso de robots. El caso europeo de desinfección permite estudiar contratación y despliegue, mientras deja abierta la evaluación del efecto clínico.\cite{uvdfinal} En manufactura y logística, el análisis también debe incluir cómo cambian las tareas y qué formación necesita el personal, además del rendimiento del equipo.
 
 \section{Criterios para una incorporación responsable}
 La incorporación de estas aplicaciones y sistemas robóticos en actividades que involucran directamente a las personas requiere considerar no solamente sus capacidades técnicas y los beneficios que pueden ofrecer, sino también las implicaciones éticas, sociales y económicas de su utilización. En este sentido, la Recomendación de la UNESCO sobre la Ética de la Inteligencia Artificial incluye los sistemas robóticos dentro de su ámbito de aplicación y plantea principios fundamentales relacionados con la protección de la privacidad, la transparencia, la responsabilidad y la supervisión humana. \cite{unesco} Estos principios adquieren especial relevancia en la robótica de servicio, debido a que sus aplicaciones pueden implicar la recopilación de información personal, la interacción con personas en condiciones de vulnerabilidad y la delegación de determinadas actividades a sistemas autónomos. Por esta razón, la incorporación de estos sistemas debe acompañarse de mecanismos que permitan evaluar sus resultados, identificar posibles riesgos y garantizar que su utilización responda a las necesidades de las personas. A partir de estos principios y de los casos examinados, este informe propone los siguientes criterios de evaluación:
-
 
 \begin{enumerate}
   \item Definir una tarea y un resultado verificable. En asistencia puede ser completar una actividad cotidiana; en logística, entregar materiales sin errores; en acompañamiento, mejorar una medida de bienestar acordada con la persona.
@@ -358,21 +338,16 @@ La incorporación de estas aplicaciones y sistemas robóticos en actividades que
   \item Calcular el costo de uso y sus efectos sobre el trabajo. La evaluación debe incluir mantenimiento, adaptación, formación y tiempo de supervisión.
 \end{enumerate}
 
-
 Los criterios anteriores permiten establecer una base para analizar si la incorporación de un sistema robótico resulta adecuada en función de su propósito, las características de los usuarios y las condiciones del entorno en el que será utilizado. Su aplicación busca evitar que la evaluación se limite únicamente al cumplimiento de una tarea o a las capacidades tecnológicas del dispositivo, incorporando también aspectos como la seguridad, la aceptación por parte de las personas, la protección de su información y la sostenibilidad de su implementación. Asimismo, estos criterios permiten reconocer que un sistema técnicamente funcional no necesariamente representa una solución conveniente en todos los contextos, ya que sus beneficios deben valorarse en relación con los posibles riesgos, costos y efectos sobre las actividades humanas. Finalmente, es importante señalar que estos criterios constituyen recomendaciones de análisis propuestas en este informe, y no resultados experimentales ni requisitos legales universales. Por tanto, su aplicación debe ajustarse a las características de cada producto, su finalidad y el contexto específico en el que se pretende implementar.
 
 \section{Conclusiones}
 Las aplicaciones orientadas a la robótica de servicio comprenden una amplia variedad de sistemas cuyas características responden a diferentes necesidades de la sociedad. Dentro de este ámbito, los robots de asistencia se orientan a apoyar a las personas en la realización de actividades cotidianas o en procesos específicos, como la rehabilitación, contribuyendo a mejorar su autonomía y calidad de vida. Por otro lado, los robots de servicio, ejecutan tareas útiles en distintos entornos, como el reparto de productos, la inspección de instalaciones y la desinfección de espacios. Los robots sociales, en cambio, tienen como propósito principal la interacción y comunicación con los seres humanos, mediante mecanismos que les permiten interpretar determinados estímulos y generar respuestas. Aunque estas categorías permiten organizar las distintas aplicaciones de la robótica, sus límites no son estrictos, ya que un mismo sistema puede incorporar funciones correspondientes a más de una categoría. Asimismo, otras áreas de las aplicaciones de servicio cómo la robótica médica requiere una consideración adicional, está en particular, al incluir elementos de salud en sus aplicaciones pueden involucrar procedimientos clínicos, intervenciones especializadas y requisitos de seguridad adicionales que no se encuentran presentes en otras aplicaciones de servicio.
 
-
 Los casos examinados permiten reconocer tanto el potencial de estas tecnologías como la importancia de analizar críticamente la evidencia disponible sobre su funcionamiento. Sin embargo, las fuentes consultadas presentan diferentes alcances y no deben interpretarse como evidencias equivalentes. La documentación de Kinova y CYBERDYNE permite conocer las capacidades técnicas y aplicaciones previstas para sus sistemas; los registros europeos acreditan el despliegue de robots durante la pandemia; la información de Starship Technologies comunica una escala de implementación comercial; el programa de ElliQ recoge experiencias y valoraciones declaradas por sus usuarios; mientras que el ensayo de PARO proporciona una comparación controlada cuyos resultados se encuentran delimitados por las condiciones del estudio. Esta diversidad de fuentes demuestra que la existencia de una aplicación funcional o su implementación en un entorno real no garantiza, por sí misma, que produzca beneficios significativos en todos los contextos. Para establecer conclusiones más sólidas es necesario considerar la metodología utilizada, las características de la población estudiada, las condiciones de implementación y las limitaciones de cada evaluación. Por tanto, aspectos como la efectividad, la seguridad, los costos y la aceptación por parte de los usuarios deben analizarse de manera diferenciada.
-
 
 El envejecimiento de la población, las necesidades de las personas con discapacidad, los problemas asociados a la soledad y la disponibilidad limitada de personal en determinados sectores constituyen algunos de los factores que impulsan el desarrollo y la incorporación de sistemas robóticos. Estas circunstancias evidencian que la robótica de servicio puede desempeñar un papel importante como herramienta de apoyo en actividades donde existen necesidades que no siempre pueden atenderse mediante los recursos convencionales. No obstante, su incorporación no debe entenderse necesariamente como un reemplazo de las capacidades o responsabilidades humanas, sino como una posibilidad de complementar el trabajo de las personas y facilitar determinadas actividades. En especial, en ámbitos como el cuidado, la asistencia y el acompañamiento, la presencia de un robot no sustituye por completo los componentes humanos, sociales y emocionales que forman parte de estas actividades. 
 
-
 En este sentido, los robots con aplicaciones de asistencia y sociales deben concebirse principalmente como herramientas de apoyo y no como sustitutos de las personas especialistas que participan en estas actividades. Aunque estos sistemas pueden facilitar determinadas tareas, proporcionar acompañamiento y contribuir a mejorar la autonomía de sus usuarios, existen aspectos de la atención humana que difícilmente pueden reproducirse mediante sistemas automatizados. En áreas como la rehabilitación, el cuidado y el acompañamiento, la experiencia profesional, el criterio humano, la empatía y la capacidad de comprender las necesidades particulares de cada persona continúan siendo fundamentales. Por esta razón, la incorporación de estos robots debe orientarse a complementar el trabajo de los profesionales, reducir ciertas cargas operativas y facilitar la atención, sin desplazar la intervención humana cuando esta resulte necesaria. De esta manera, la tecnología puede aprovecharse como un recurso que fortalezca las capacidades de las personas especialistas y contribuya a ofrecer una atención más eficiente, sin perder de vista la importancia de las relaciones humanas en estos ámbitos.
-
 
 Finalmente, la implementación de robots de servicio debe responder a una evaluación que considere tanto sus capacidades tecnológicas como las consecuencias de su utilización. No basta con demostrar que un sistema puede ejecutar una tarea de manera autónoma; también es necesario comprobar que dicha tarea representa un beneficio real para sus usuarios, que su funcionamiento es seguro y que existen mecanismos adecuados de supervisión y responsabilidad. Aspectos como la privacidad, la transparencia, la aceptación de las personas, los costos de mantenimiento y la necesidad de intervención humana deben formar parte de este análisis. En consecuencia, el desarrollo de la robótica de servicio no debería medirse únicamente por el nivel de autonomía alcanzado o la cantidad de tareas que un robot puede realizar, sino también por su capacidad para responder a necesidades concretas de manera efectiva, segura y responsable. Su valor reside, en última instancia, en que la tecnología contribuya al bienestar de las personas y complemente sus capacidades, manteniendo al ser humano como referencia principal de su diseño e implementación.
 
